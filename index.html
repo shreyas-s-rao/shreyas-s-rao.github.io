@@ -1,1 +1,191 @@
-Beginning of a new website. Stay tuned...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreyas Rao">
+    <meta property="og:title" content="Shreyas Rao">
+    <meta property="og:description" content="Shreyas Rao, a Senior Software Engineer with expertise in Kubernetes, Cloud Computing, System Design and Golang Programming">
+    <meta property="og:image" content="assets/images/me.jpg">
+    <meta property="og:url" content="https://shreyas-s-rao.github.io/">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <title>Shreyas Rao</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="profile-photo">
+          <img src="assets/images/me.jpg" alt="Shreyas Rao">
+        </div>
+        <h1>Shreyas Rao</h1>
+        <p>Senior Software Developer | Cloud Computing | Distributed Systems</p>
+        <div class="social-links">
+          <a href="mailto:hello@shreyasrao.com" target="_blank">
+              <img src="assets/icons/email.png" alt="Email">
+          </a>
+          <a href="https://linkedin.com/in/shreyasrao" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/shreyas-s-rao" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/github.png" alt="GitHub">
+          </a>
+          <a href="assets/files/resume.pdf" target="_blank">
+              <img src="assets/icons/resume.png" alt="Resume">
+          </a>
+        </div>
+    </header>
+
+    <section id="about-me">
+        <h2>🧑‍💻 About Me</h2>
+        <p>Hey there! I'm Shreyas Rao, a Senior Software Developer who enjoys building things in the cloud. I love designing highly available, scalable and resilient distributed systems using Kubernetes, with a passion for cloud-native architecture.</p>
+    </section>
+
+    <section id="what-i-do">
+      <h2>💡 What Do I Do?</h2>
+      <p>Currently, I work at <b>SAP Labs</b>, where I have almost <strong>7 years of work experience</strong> in contributing to <b><a href="https://gardener.cloud" target="_blank">Project Gardener</a></b>, <b>a highly scalable, robust and resilient managed multi-cloud Kubernetes-as-a-Service platform</b> for cloud-based applications and services across the SAP's product portfolio.</p>
+
+      <h3>📦 Scaling & Maintaining Kubernetes Infrastructure</h3>
+      <ul>
+          <li>Developed the <strong>disaster recovery mechanism</strong> for Gardener-managed Kubernetes clusters.</li>
+          <li>Developed & maintained <strong>Kubernetes operators</strong> (<em><a href="https://github.com/gardener/etcd-backup-restore/" target="_blank">etcd-backup-restore</a>, <a href="https://github.com/gardener/etcd-druid" target="_blank">etcd-druid</a>, kupid, etc</em>), improving stability & resilience.</li>
+          <li>Enhanced disaster recovery—reducing cluster restoration time from <strong>12 hours to 30 minutes</strong> by fixing gaps in etcd restoration.</li>
+      </ul>
+  
+      <h3>🚀 Leading & Optimizing High Availability Solutions</h3>
+      <ul>
+          <li>Led a team of <strong>6 developers</strong> in implementing <strong>high-availability</strong> for Gardener-managed Kubernetes control planes, boosting uptime from <strong>96% to 99.5%</strong> while keeping cloud costs optimized.</li>
+          <li>Designed <strong>robust backup & restore protocols</strong> to protect <strong>400TB</strong> of critical cluster data, preventing data loss.</li>
+      </ul>
+  
+      <h3>🛠 Improving DevOps & Observability</h3>
+      <ul>
+          <li>Developed a <strong>Kubernetes Custom Resource based solution</strong> to automate operations, reducing manual intervention and improving productivity.</li>
+          <li>Integrated <strong>Prometheus, Grafana, Loki, and Fluentbit</strong> to enhance monitoring & alerting for cluster failures.</li>
+          <li>Improved <strong>CI/CD pipelines</strong> using <strong>Concourse & Prow</strong>, accelerating deployments and reducing manual overhead.</li>
+      </ul>
+  
+      <h3>🎤 Open Source, Talks & Community Engagement</h3>
+      <ul>
+          <li><strong>Coordinated presentation efforts at two international KubeCon events</strong>, presenting Gardener's cloud-native innovations to <strong>500+ attendees</strong>, increasing community engagement by <strong>40%</strong>.</li>
+          <li>Organized a <strong>Kubernetes Meetup in Bangalore (2018)</strong>, attracting <strong>200+ participants</strong></li>
+          <li><strong>Mentored 6+ engineers</strong>, streamlined the onboarding process and reduced onboarding time by <strong>50%</strong>.</li>
+      </ul>
+  
+      <h3>📈 Building & Growing Teams</h3>
+      <ul>
+          <li>Helped scale the Gardener team at SAP from <strong>2 to 20 engineers</strong> (<strong>900% growth</strong> in 2 years), conducting <strong>50+ technical interviews</strong>.</li>
+          <li>Championed <strong>best software engineering practices</strong> by introducing pair programming and test-driven development within the team, leading to faster development cycles, improved code maintainability and increased test coverage from <strong>40% to 85%</strong>, leading to fewer production incidents and improved reliability.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>💻 Projects I've Worked On</h2>
+      <p>Here are some of the key projects I have contributed to, building scalable, cloud-native, and high-availability solutions.</p>
+      <div class="project">
+          <h3><a href="https://gardener.cloud/" target="_blank"><img src="assets/icons/gardener.png" alt="gardener" style="width:40px; vertical-align: middle;"> Gardener</a></h3>
+          <p>An open-source <strong>Kubernetes-Clusters-as-a-Service</strong> platform that enables enterprises to run and scale Kubernetes clusters across multiple cloud providers (<strong>AWS, GCP, Azure, Alicloud, OpenStack</strong>) and automates day-2 operations. I contributed to its <strong>high availability architecture, disaster recovery, and etcd lifecycle management</strong>.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/gardener/etcd-druid" target="_blank"><img src="assets/icons/etcd-druid.png" alt="etcd-druid" style="width:40px; vertical-align: middle;"> etcd-druid</a></h3>
+        <p>A <strong>Kubernetes operator</strong> that automates the lifecycle management of etcd clusters, handling upgrades, backups, maintenance and scaling. Built this one from ground up, and is very dear to me.</p>
+    </div>
+      <div class="project">
+          <h3><a href="https://github.com/gardener/etcd-backup-restore" target="_blank">♻️ etcd-backup-restore</a></h3>
+          <p>A Golang-based agent that provides <strong>automated, scheduled, and on-demand backups and restoration for etcd DB clusters</strong>, ensuring high availability and disaster recovery. I built quite a few features and optimizations into this one.</p>
+      </div>
+      <div class="project">
+          <h3><a href="https://github.com/gardener/kupid" target="_blank">💘 kupid</a></h3>
+          <p>A Kubernetes webhook server that orthogonally injects scheduling conditions into Kubernetes workloads at runtime.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://ieeexplore.ieee.org/document/8648632" target="_blank">🧘‍♂️ Bodhisattva</a></h3>
+        <p>A cloud-based <strong>Machine-Learning-as-a-Service (MLaaS)</strong> platform that simplifies the deployment of AI models by offering an intuitive, scalable microservice suite in a <strong>container-based PaaS environment</strong> for AI
+        training, inference and serving.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>🦾 Core Skills</h2>
+      <div class="skills-list">
+          <span><img src="assets/icons/golang.png" alt="golang"> Golang</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/bash-scripting.png" alt="bash-scripting"> Bash Scripting</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/python.png" alt="python"> Python</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/kubernetes.png" alt="kubernetes"> Kubernetes</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/etcd.png" alt="=etcd"> Etcd</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/cloud-computing.png" alt="cloud-computing"> Cloud Computing</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/distributed-systems.png" alt="distributed-systems">&nbsp; Distributed System Design</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/aws.png" alt="aws">&nbsp; Amazon Web Services</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/gcp.png" alt="gcp"> Google Cloud Platform</span>&nbsp;&nbsp;&nbsp;
+          <span><img src="assets/icons/azure.png" alt="azure"> Microsoft Azure</span>
+      </div>
+    </section>
+
+    <section id="edu-certs">
+      <h2>🎓 Education & 📜 Certifications</h2>
+    
+      <div class="education">
+        <ul>
+          <li>
+            <img src="assets/icons/pesu.png" alt="pesu">&nbsp; <strong>PES University, Bangalore, India</strong> - June 2018
+            <ul>
+              <li><p>🎓 B.Tech in Computer Science and Technology</p></li>
+              <li><p>🎓 Minors in Business Management</p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="certifications">
+        <ul>
+          <li>
+            <img src="assets/icons/cka.png" alt="cka"> <strong><a href="assets/files/cka.pdf" target="_blank">Certified Kubernetes Administrator</a></strong> - Linux Foundation (December 2020 - Present)  
+                <p>A globally recognized certification validating my expertise in managing, deploying, and troubleshooting Kubernetes clusters, ensuring high availability and security in cloud environments.</p>
+          </li>
+          <li>
+            <img src="assets/icons/sap.png" alt="sap" style="width:80px; height: 40px;"> <strong><a href="assets/files/sap-la-2.pdf" target="_blank">SAP Leadership Academy</a></strong> - SAP Labs India (August 2024)  
+                <p>A leadership development program focusing on <strong>empathetic and mindful leadership</strong>, strategic decision-making, and managing team dynamics to foster a productive and inclusive work environment.</p>
+          </li>
+          <li>
+            <img src="assets/icons/udacity.png" alt="udacity" style="width:40px; height: 40px;">&nbsp; <strong>Nanodegree in Machine Learning</strong> - Udacity (May 2017)  
+                <p>A specialized course covering supervised and unsupervised learning, deep learning techniques, and real-world ML applications, enhancing my ability to build and optimize intelligent systems.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>🎯 What Are My Hobbies?</h2>
+      <div class="hobbies-list">
+        <span>📖 Volunteer Teaching</span>&nbsp;&nbsp;&nbsp;
+        <span>🎙️ Singing</span>&nbsp;&nbsp;&nbsp;
+        <span>🎶 Music Composition</span>&nbsp;&nbsp;&nbsp;
+        <span>🪈🎸🎹 Learning new musical instruments</span>&nbsp;&nbsp;&nbsp;
+        <span>🏔️ Trekking</span>&nbsp;&nbsp;&nbsp;
+        <span>✈️ Travelling</span>&nbsp;&nbsp;&nbsp;
+      </div>
+    </section>
+
+    <section id="social-responsibility">
+      <h2>🫱🏻‍🫲🏼 Social Responsibility</h2>
+      <p>Over the past decade, I have strived to help those in need, as is my responsibility to society and the people around me.</p>
+      <ul>
+        <li>As part of an SAP program <strong>Girl Power Tech</strong>, I mentored over 40 college girls from rural areas in corporate etiquette and interview preparedness.</li>
+        <li>As a volunteer of the NGO <strong>Youth For Seva</strong>, I facilitated comprehensive training sessions for 180 government school students across 6 batches, enhancing their preparation for the NMMS scholarship exam.</li>
+        <li>Additionally, I helped develop and implement targeted study materials and mock exams for 300+ students across the state of Karnataka.</li>
+      </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Shreyas Rao | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
